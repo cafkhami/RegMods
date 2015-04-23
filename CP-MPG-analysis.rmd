@@ -1,0 +1,8 @@
+---
+title: "RegMods Course Project - MPG analysis based on transmission type"
+author: "cafkhami"
+date: "Thursday, April 23, 2015"
+output: html_document
+---
+
+
