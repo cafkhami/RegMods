@@ -6,3 +6,20 @@ output: html_document
 ---
 
 
+##Problem Definition
+You work for Motor Trend, a magazine about the automobile industry. Looking at a data set of a collection of cars, they are interested in exploring the relationship between a set of variables and miles per gallon (MPG) (outcome). They are particularly interested in the following two questions:
+
+* "Is an automatic or manual transmission better for MPG"
+* "Quantify the MPG difference between automatic and manual transmissions"
+
+We will use the `mtcars` dataset in order to answer these questions to the best of our ability.
+
+##Exploratory Analysis
+Let's explore the `mtcars` dataset to attempt to gain some intuition about the questions posed.
+
+```{r}
+library(ggplot2)
+library(datasets)
+data(mtcars)
+
+g <- ggplot(mtcars, aes(x = MPG, fill = as.factor(am))) + geom_histogram(alpha = .20, binwidth= 1, colour = "black", aes(y = ..density..))
